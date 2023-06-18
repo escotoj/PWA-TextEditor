@@ -33,14 +33,15 @@ GitHub: [escotoj](https://github.com/escotoj)
 
 ### TODO
 
-- add logic to the database.js (reaon for the 2 terminal errors)
-- indexedDB has created database, 
-- service workers is showing but 3 source errors
-- check cache storing 
+- two console log errors while db is online
+- Double CHECK indexedDB has created database 
+- Double CHECK cache storing 
 
 
 ### DONE
 
+- working and storing data offline
+- add logic to the database.js (reaon for the 2 terminal errors)
 - logic for install.js
 - Implement asset caching by adding code to the the src-sw 
 - Add and configure workbox plugins for a service worker and manifest file in webpack
