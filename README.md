@@ -33,7 +33,6 @@ GitHub: [escotoj](https://github.com/escotoj)
 
 ### TODO
 
-- logic for install.js
 - add logic to the database.js (reaon for the 2 terminal errors)
 - indexedDB has created database, 
 - service workers is showing but 3 source errors
@@ -42,6 +41,7 @@ GitHub: [escotoj](https://github.com/escotoj)
 
 ### DONE
 
+- logic for install.js
 - Implement asset caching by adding code to the the src-sw 
 - Add and configure workbox plugins for a service worker and manifest file in webpack
 - Add CSS loaders and babel to webpack.
