@@ -9,6 +9,7 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = () => {
   return {
     mode: 'development',
+    //entry point
     entry: {
       main: './src/js/index.js',
       database: './src/js/database.js',
@@ -16,20 +17,23 @@ module.exports = () => {
       header: './src/js/header.js', 
       install: './src/js/install.js'
     },
+  // bundles
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    // webpack that generates the html and applies bundles 
     plugins: [
       new HtmlWebpackPlugin({
         template: 'index.html',
         title: 'Text Editor'
       }),
+      // for Service Workers
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-
+// for the manifest.json 
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -59,7 +63,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          //BABEL LOADER
+          //BABEL LOADER 
           use: {
             loader: 'babel-loader',
             options: {

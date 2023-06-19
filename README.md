@@ -33,6 +33,7 @@ GitHub: [escotoj](https://github.com/escotoj)
 
 ### TODO
 
+- jate header not showing anymore 
 - two console log errors while db is online
 - Double CHECK indexedDB has created database 
 - Double CHECK cache storing 
@@ -46,3 +47,5 @@ GitHub: [escotoj](https://github.com/escotoj)
 - Implement asset caching by adding code to the the src-sw 
 - Add and configure workbox plugins for a service worker and manifest file in webpack
 - Add CSS loaders and babel to webpack.
+
+npx create-react-app 
